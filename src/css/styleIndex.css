@@ -1,9 +1,13 @@
-/* Make the image fully responsive */
+/*---------------------------------------
+      CARRUSEL              
+  -----------------------------------------*/
 .carousel-inner img {
     width: 100%;
     height: 625px;
 }
-
+/*---------------------------------------
+      HISTORIA              
+  -----------------------------------------*/
 .historia{
     width: 52%;
     height: 625px;
@@ -17,6 +21,7 @@
     margin-top: 30px;
 }
 .historia h2{
+	font-family: 'Sansita Swashed', cursive;
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -39,9 +44,30 @@
     width: 600px;
     height: 500px;
 }
+.historia #btnIniciar{
+	margin-top: 100px;
+	background: #ce3232;
+    border-radius: 2px;
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
+	height: 50px;
+	width: 150px;
+	margin-left: 90px;
+}
+.historia #btnIniciar:hover{
+	background: #292929;
+    color: #ffffff;
+}
 
 
+/*---------------------------------------
+      EQUIPO              
+  -----------------------------------------*/
 
+.titulTarjetas{
+	font-family: 'Sansita Swashed', cursive;
+}
 .contenedor {
 	max-width: 1200px;
     margin:50px auto;
@@ -67,10 +93,10 @@
 	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
 }
 
-.contenedor_tarjeta:hover figure img {
-	/* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
-	/*filter:blur(2px);*/
-}
+/*.contenedor_tarjeta:hover figure img {
+	Si queremos podemos aplicar un efecto blur a nuestra imagen al girar
+	filter:blur(2px);
+}*/
 
 figure {
 	width: 300px;
@@ -166,3 +192,333 @@ figure .trasera p {
 	line-height: 22px;
 	font-size: 14px;
 }
+
+
+  /*---------------------------------------
+     MENU              
+  -----------------------------------------*/
+.titPlatillos{
+	font-family: 'Sansita Swashed', cursive;
+}
+  #menu {
+    padding-bottom: 0;
+  }
+
+  #menu .container {
+    width: 100%;
+  }
+
+  #menu .col-md-4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-thumb img {
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  .menu-thumb:hover img {
+    transform: scale(1.15);
+  }
+
+  #menu .menu-thumb {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 102%;
+  }
+
+  .menu-thumb .menu-info {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: left;
+    padding: 25px 30px;
+    transition: 0.5s 0.2s;
+  }
+
+  .menu-info .menu-item {
+    float: left;
+  }
+
+  .menu-info .menu-price {
+    float: right;
+  }
+
+  .menu-info .menu-price span {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .menu-thumb .menu-info h3,
+  .menu-thumb .menu-info p,
+  .menu-thumb .menu-info span {
+    transform: translateY(100%);
+    opacity: 0;
+    display: block;
+    transition: 0.5s 0.2s;
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+  }
+
+  .menu-thumb .menu-info h3 {
+    margin-top: 0;
+  }
+
+  .menu-thumb .menu-info p {
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .menu-thumb:hover .menu-info h3,
+  .menu-thumb:hover .menu-info p,
+  .menu-thumb:hover .menu-info span {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .menu-thumb:hover .menu-info {
+    background: rgba(0,0,0,0.8);
+  }
+
+
+
+  /*---------------------------------------
+      CONTACTANOS             
+  -----------------------------------------*/
+
+#contactanos{
+	width: 100%;
+	height: 550px;
+	margin-top: 80px;
+}
+#contactanos .mapa{
+	width: 45%;
+	float: left;
+}
+#contactanos .mapa iframe{
+	border: none;
+	width: 560px;
+	height: 450px;
+	margin-left: 100px;
+}
+
+
+#contactanos .contacto{
+	width: 40%;
+	float: right;
+	margin-right: 90px;
+}
+#contactanos .contacto .tituloForm{
+	font-family: 'Sansita Swashed', cursive;
+	font-family: 'Special Elite', cursive;
+	margin-bottom: 20px;
+}
+
+#contactanos .form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.4s;
+  }
+
+  #contactanos .form-control:hover,
+  #contactanos .form-control:focus {
+    border-bottom-color: #c9c9c9;
+  }
+
+  #contactanos input {
+    height: 55px;
+  }
+
+  #contactanos #btnEnviar{
+    background: #ce3232;
+    border-radius: 0;
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
+	height: 50px;
+	width: 350px;
+	margin-left: 90px;
+  }
+
+  #contactanos #btnEnviar:hover{
+    background: #292929;
+    color: #ffffff;
+  }
+
+
+
+/*---------------------------------------
+      Footer             
+  -----------------------------------------*/
+hr{
+	width: 99%;
+}
+
+footer {
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+footer div{
+	width: 24.3%;
+	display: inline-flex;
+	margin-left: 5px;
+}
+footer .ubicacion h4{
+	font-family: 'Alice', serif;
+	height: 30px;
+	margin-left: 80px;
+
+}
+footer .ubicacion p{
+	margin-top: 50px;
+	margin-left: -150px;
+	width: 190px;
+}
+
+footer .reservacion h4{
+	font-family: 'Alice', serif;
+	height: 30px;
+	margin-left: 50px;
+}
+
+footer .reservacion p{
+	margin-top: 50px;
+	margin-left: -150px;
+	width: 190px;
+}
+footer .reservacion .mail{
+	position: static;
+	float: left;
+	margin-top:75px;
+	margin-right: 110px;
+}
+footer .reservacion .mail a{
+	text-decoration: none;
+	color: #1f1f1f;	
+}
+footer .reservacion .mail a:hover{
+	text-decoration: none;
+	color: #949494;	
+}
+footer .horario{
+	background: url('../imgs/footer-open-hour-bg.jpg') center center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 0;
+    padding: 40px 40px 40px 0px;
+	overflow: hidden;
+	position: relative;
+    z-index: 22;
+    right: 20px;
+    bottom: 20px;
+}
+footer .horario::after{
+	background: rgba(29,29,29,0.85);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2222;
+}
+
+footer .horario h4{
+	font-family: 'Alice', serif;
+	height: 30px;
+	margin-left: 80px;
+	color: #ffffff;
+}
+footer .horario div {
+	display: block;
+	width: 200px;
+}
+footer .horario .horas {
+	margin-top: 40px;
+	margin-left: -90px;
+	width: 190px;
+}
+footer .horario p {
+	color:#d9d9d9;
+}
+footer .horario strong {
+	color:#ffffff;
+}
+
+footer .redes h4 {
+	font-family: 'Alice', serif;
+	position: absolute;
+	margin-top: -30px;
+}
+
+.social-icon {
+    position: relative;
+    padding: 0;
+	margin-top: 20px;
+
+}
+
+.social-icon li {
+	display: inline-block;
+	list-style: none;
+	margin-bottom: 5px;
+}
+/*Linea Vertical(separacion de redes)*/
+.vl {
+	border-left: 1px solid #c9c9c9;
+	height: 80px;
+	position: absolute;
+	margin-left: 83px;
+	margin-top: 20px;
+}
+.social-icon .name {
+	margin-left: 10px;
+}
+
+.social-icon li a {
+	border-radius: 100px;
+	color: #ce3232;
+	font-size: 15px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-decoration: none;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+	position: relative;
+}
+
+.social-icon li a:hover {
+	background: #ce3232;
+	color: #ffffff;
+}
+.copy{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 15px;
+}
+
+
+
+
+
