@@ -378,6 +378,21 @@ figure .trasera p {
   }
 
 
+.inputWithIcon {
+	position: relative;
+}
+.inputWithIcon i{
+	position: absolute;
+	left:520px;
+	top:8px;
+	padding:9px 8px;
+	color:#eb4d4b;
+	transition: 0.3s;
+}
+.inputWithIcon input, textarea:focus + i{
+	color: dodgerblue;
+}
+
 
 /*---------------------------------------
       Footer             
@@ -543,4 +558,11 @@ footer .redes h4 {
 
 
 
-
+/*---------------------------------------
+	  Borde rojo creado desde js
+	  validar inputs vacios
+	  revisar despues             
+  -----------------------------------------*/
+.input_error{
+    border:1.5px solid #eb4d4b;
+}

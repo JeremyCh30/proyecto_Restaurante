@@ -269,12 +269,22 @@
           </div>
 
           <div class="formulario">
+            <div class="inputWithIcon">
+              <input type="text" class="form-control" id="txtNombre" placeholder="Nombre completo">
+              <i id="iconNombre"></i>
+            </div>
+            <div class="inputWithIcon">
+              <input type="email" class="form-control" id="txtCorreo" placeholder="Correo Electrónico">
+              <i id="iconEmail"></i>
+            </div>
+            <div class="inputWithIcon">
+              <input type="text" class="form-control" id="txtAsunto" placeholder="Asunto">
+              <i id="iconAsunto"></i>
+            </div>
             
-            <input type="text" class="form-control" id="txtNombre" placeholder="Nombre completo">
-            <input type="email" class="form-control" id="txtCorreo" placeholder="Correo Electrónico">
-            <input type="text" class="form-control" id="txtAsunto" placeholder="Asunto">
-            <div>
+            <div class="inputWithIcon">
               <textarea class="form-control" id="txtExplicar" cols="50" rows="5" placeholder="Cuentános como podemos ayudarte"></textarea>
+              <i id="iconExplicacion"></i>
             </div>
             <button type="submit" id="btnEnviar">Enviar</button>
             
@@ -348,8 +358,15 @@
     
 
     <!--link scripts bs-->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--link script SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <!--link script index-->
+    <script src="../js/ctrlrIndex.js"></script>
+
+
 </body>
 </html>
