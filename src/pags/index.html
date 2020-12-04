@@ -58,222 +58,234 @@
           </div>
     </header>
 
-    <div>
-      <div class="historia">
-        <h4>Conoce nuestra Historia</h2>
-        <h2>KND Restaurant, la mejor comida al mejor precio desde el 2020</h2>
-        <p>Esta idea nace gracias al mezlar comida gourmet con un toque street, somos especialistas en comida con una mezcla de estilo mas familiar</p>
-        <p>Nuestra receta secreta secreta da un sentido distinto al paladar, apreciando cada sabor en que entra a la boca del cliente por medio de nuestros deliciosos platillos</p>
-        <p>Ven y disfruta de tu comida favorita</p>
-        <input type="button" id="btnIniciar" value="Vamos allá"><!--agregar link desde js hacia iniciar sesion-->
-      </div>
-      <div class="imgHistoria">
-        <img src="../imgs/about-image.jpg" alt="">
+    <main>
+      <div>
+        <div class="historia" id="historia">
+          <h4>Conoce nuestra Historia</h2>
+          <h2>KND Restaurant, la mejor comida al mejor precio desde el 2020</h2>
+          <p>Esta idea nace gracias al mezlar comida gourmet con un toque street, somos especialistas en comida con una mezcla de estilo mas familiar</p>
+          <p>Nuestra receta secreta secreta da un sentido distinto al paladar, apreciando cada sabor en que entra a la boca del cliente por medio de nuestros deliciosos platillos</p>
+          <p>Ven y disfruta de tu comida favorita</p>
+          <input type="button" id="btnIniciar" value="Vamos allá" onclick="window.location='./inicioSesion.html'"><!--cuando se cree el inicio de sesion servira-->
+        </div>
+        <div class="imgHistoria">
+          <img src="../imgs/about-image.jpg" alt="">
+        </div>   
+    </div>
+
+      <h2 class="titulTarjetas">Conoce nuestros especialistas</h2>
+      <div class="contenedor">
+        <div class="contenedor_tarjeta">
+          <figure id="tarjeta">
+            <img src="../imgs/gonzalo.jpeg" class="frontal" alt="">
+            <figcaption class="trasera">
+              <h2 class="titulo">Gonzalo Morales</h2>
+              <h3 class="especialidad">Chef Rotisseur o de asados</h3>
+              <hr>
+              <p>Es el encargado de preparar las carnes asadas, a la parrilla o a las brasas en el menú. Su trabajo incluye trabajar con cualquier tipo de filete y carne o alimentos que le sean semejantes.
+              Se encarga de hablar y conseguir buenos proveedores de carnes, así como puede encargarse de distribuirla a otros lugares.</p>
+            </figcaption>
+          </figure>
+          </a>
+        </div>
+
+        <div class="contenedor_tarjeta">
+          <figure id="tarjeta">
+            <img src="../imgs/reymond.jpeg" class="frontal" alt="">
+            <figcaption class="trasera">
+              <h2 class="titulo">Reymond Rodríguez</h2>
+              <h3 class="especialidad">Chef Patissier o de Repostería</h3>
+              <hr>
+              <p>Es quien se encarga de los postres.
+              La estación de cocina del patissier es la principal encargada de preparar toda la comida que implique ser horneada, es decir, tanto panes como pasteles
+              Entre más variedad de repostería domine este chef , mayor será la elegancia y disciplina artística que demuestre en la cocina.</p>
+            </figcaption>
+          </figure>
+          </a>
+        </div>
+
+        <div class="contenedor_tarjeta">
+            <figure id="tarjeta">
+              <img src="../imgs/jeremy.jpeg" class="frontal" alt="">
+              <figcaption class="trasera">
+                <h2 class="titulo">Jeremy Briones</h2>
+                <h3 class="especialidad">Chef Saucier o de salsas</h3>
+                <hr>
+                <p>Mejor conocido como sauce chef, es uno de los rangos más respetados dentro de la cocina. Su trabajo tiene tanto peso que reporta todo directamente al Chef principal o al sous chef.
+                Es responsable de diferentes tareas en la cocina, como sazonar los alimentos, preparar las sopas y los guisos.
+                </p> 
+                  
+              </figcaption>
+            </figure>
+          </a>
+        </div>
       </div>
       
-  </div>
-    <h2 class="titulTarjetas">Conoce nuestros especialistas</h2>
-    <div class="contenedor">
-    <div class="contenedor_tarjeta">
-        <figure id="tarjeta">
-          <img src="../imgs/jeremy.jpeg" class="frontal" alt="">
-          <figcaption class="trasera">
-            <h2 class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero!</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate voluptates ipsum suscipit, aspernatur eum, amet nemo architecto nihil corrupti.</p>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
 
-    <div class="contenedor_tarjeta">
-        <figure id="tarjeta">
-          <img src="../imgs/jeremy.jpeg" class="frontal" alt="">
-          <figcaption class="trasera">
-            <h2 class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero!</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate voluptates ipsum suscipit, aspernatur eum, amet nemo architecto nihil corrupti.</p>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
+      
 
-    <div class="contenedor_tarjeta">
-        <figure id="tarjeta">
-          <img src="../imgs/jeremy.jpeg" class="frontal" alt="">
-          <figcaption class="trasera">
-            <h2 class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero!</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate voluptates ipsum suscipit, aspernatur eum, amet nemo architecto nihil corrupti.</p>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-  </div>
+      
+      <section id="menu" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row">
 
-    
+            <div class="col-md-12 col-sm-12">
+                  <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                      <h2 class="titPlatillos">Algunos platillos</h2>
+                      
+                  </div>
+            </div>
 
-    
-    <section id="menu" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                  <!-- MENU THUMB -->
+                  <div class="menu-thumb">
+                      <a href="../imgs/hotcakes.jpg" class="image-popup" title="American Breakfast">
+                            <img src="../imgs/hotcakes.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
 
-          <div class="col-md-12 col-sm-12">
-                <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                    <h2 class="titPlatillos">Algunos platillos</h2>
-                    
-                </div>
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                      <h3>hotcakes con banano</h3>
+                                      <p>Harina / Huevos / Banano</p>
+                                </div>
+                                <div class="menu-price">
+                                      <span>₡2500</span>
+                                </div>
+                            </div>
+                      </a>
+                  </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                  <!-- MENU THUMB -->
+                  <div class="menu-thumb">
+                      <a href="../imgs/ensalada_cesar.jpg" class="image-popup" title="Self-made Salad">
+                            <img src="../imgs/ensalada_cesar.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                      <h3>Ensalada césar</h3>
+                                      <p>Langostino / Queso Parmesano / Lechuga</p>
+                                </div>
+                                <div class="menu-price">
+                                      <span>₡4000</span>
+                                </div>
+                            </div>
+                      </a>
+                  </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                  <!-- MENU THUMB -->
+                  <div class="menu-thumb">
+                      <a href="../imgs/rice&beans.jpg" class="image-popup" title="Chinese Noodle">
+                            <img src="../imgs/rice&beans.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                      <h3>Rice And Beans</h3>
+                                      <p>Arroz / Coco / Pollo</p>
+                                </div>
+                                <div class="menu-price">
+                                      <span>₡3500</span>
+                                </div>
+                            </div>
+                      </a>
+                  </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                  <!-- MENU THUMB -->
+                  <div class="menu-thumb">
+                      <a href="../imgs/pasta_pomodoro.jpg" class="image-popup" title="Rice Soup">
+                            <img src="../imgs/pasta_pomodoro.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                      <h3>Pasta al Pomodoro</h3>
+                                      <p>Pasta / Salsa / Cebolla</p>
+                                </div>
+                                <div class="menu-price">
+                                      <span>₡3000</span>
+                                </div>
+                            </div>
+                      </a>
+                  </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                  <!-- MENU THUMB -->
+                  <div class="menu-thumb">
+                      <a href="../imgs/tiramisu.jpg" class="image-popup" title="Project title">
+                            <img src="../imgs/tiramisu.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                      <h3>Porción de tiramisú</h3>
+                                      <p>Galletas / Café / Crema Batida</p>
+                                </div>
+                                <div class="menu-price">
+                                      <span>$1000</span>
+                                </div>
+                            </div>
+                      </a>
+                  </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                  <!-- MENU THUMB -->
+                  <div class="menu-thumb">
+                      <a href="../imgs/Tacos_Pastor.jpg" class="image-popup" title="Project title">
+                            <img src="../imgs/Tacos_Pastor.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                      <h3>Tacos al Pastor</h3>
+                                      <p>Tortilla / Lomo / Chile</p>
+                                </div>
+                                <div class="menu-price">
+                                      <span>4000</span>
+                                </div>
+                            </div>
+                      </a>
+                  </div>
+            </div>
+
+
           </div>
-
-          <div class="col-md-4 col-sm-6">
-                <!-- MENU THUMB -->
-                <div class="menu-thumb">
-                    <a href="../imgs/jeremy.jpeg" class="image-popup" title="American Breakfast">
-                          <img src="../imgs/jeremy.jpeg" class="img-responsive" alt="">
-
-                          <div class="menu-info">
-                              <div class="menu-item">
-                                    <h3>American Breakfast</h3>
-                                    <p>Tomato / Eggs / Sausage</p>
-                              </div>
-                              <div class="menu-price">
-                                    <span>$25</span>
-                              </div>
-                          </div>
-                    </a>
-                </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6">
-                <!-- MENU THUMB -->
-                <div class="menu-thumb">
-                    <a href="../imgs/jeremy.jpeg" class="image-popup" title="Self-made Salad">
-                          <img src="../imgs/jeremy.jpeg" class="img-responsive" alt="">
-
-                          <div class="menu-info">
-                              <div class="menu-item">
-                                    <h3>Self-made Salad</h3>
-                                    <p>Green / Fruits / Healthy</p>
-                              </div>
-                              <div class="menu-price">
-                                    <span>$18</span>
-                              </div>
-                          </div>
-                    </a>
-                </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6">
-                <!-- MENU THUMB -->
-                <div class="menu-thumb">
-                    <a href="../imgs/jeremy.jpeg" class="image-popup" title="Chinese Noodle">
-                          <img src="../imgs/jeremy.jpeg" class="img-responsive" alt="">
-
-                          <div class="menu-info">
-                              <div class="menu-item">
-                                    <h3>Chinese Noodle</h3>
-                                    <p>Pepper / Chicken / Vegetables</p>
-                              </div>
-                              <div class="menu-price">
-                                    <span>$34</span>
-                              </div>
-                          </div>
-                    </a>
-                </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6">
-                <!-- MENU THUMB -->
-                <div class="menu-thumb">
-                    <a href="../imgs/jeremy.jpeg" class="image-popup" title="Rice Soup">
-                          <img src="../imgs/jeremy.jpeg" class="img-responsive" alt="">
-
-                          <div class="menu-info">
-                              <div class="menu-item">
-                                    <h3>Rice Soup</h3>
-                                    <p>Green / Chicken</p>
-                              </div>
-                              <div class="menu-price">
-                                    <span>$28</span>
-                              </div>
-                          </div>
-                    </a>
-                </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6">
-                <!-- MENU THUMB -->
-                <div class="menu-thumb">
-                    <a href="../imgs/jeremy.jpeg" class="image-popup" title="Project title">
-                          <img src="../imgs/jeremy.jpeg" class="img-responsive" alt="">
-
-                          <div class="menu-info">
-                              <div class="menu-item">
-                                    <h3>Deli Burger</h3>
-                                    <p>Beef / Fried Potatoes</p>
-                              </div>
-                              <div class="menu-price">
-                                    <span>$46</span>
-                              </div>
-                          </div>
-                    </a>
-                </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6">
-                <!-- MENU THUMB -->
-                <div class="menu-thumb">
-                    <a href="../imgs/jeremy.jpeg" class="image-popup" title="Project title">
-                          <img src="../imgs/jeremy.jpeg" class="img-responsive" alt="">
-
-                          <div class="menu-info">
-                              <div class="menu-item">
-                                    <h3>Big Flat Fried</h3>
-                                    <p>Pepper / Crispy</p>
-                              </div>
-                              <div class="menu-price">
-                                    <span>$30</span>
-                              </div>
-                          </div>
-                    </a>
-                </div>
-          </div>
-
-
         </div>
-      </div>
-   </section>
-
-
-     
-
-    <!-- CONTACTANOS -->
-    <section id="contactanos">
-      <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.2096706482603!2d-84.11669058588951!3d9.916488277189119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fd9c6088d9ab%3A0x3a144cca210e8ed!2sBarrantes%20Ure%C3%B1a!5e0!3m2!1sen!2scr!4v1607028498089!5m2!1sen!2scr" allowfullscreen></iframe>
-      </div>
-      <div class="contacto">
-        <div class="tituloForm">
-          <h2>Contáctanos</h2>
-        </div>
-
-        <div class="formulario">
-          
-          <input type="text" class="form-control" id="txtNombre" placeholder="Nombre completo">
-          <input type="email" class="form-control" id="txtCorreo" placeholder="Correo Electrónico">
-          <input type="text" class="form-control" id="txtAsunto" placeholder="Asunto">
-          <div>
-            <textarea class="form-control" id="txtExplicar" cols="50" rows="5" placeholder="Cuentános como podemos ayudarte"></textarea>
-          </div>
-          <button type="submit" id="btnEnviar">Enviar</button>
-          
-          
-        </div>
-
-      </div>
-
     </section>
 
+
+      
+
+      <!-- CONTACTANOS -->
+      <section id="contactanos">
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.2096706482603!2d-84.11669058588951!3d9.916488277189119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fd9c6088d9ab%3A0x3a144cca210e8ed!2sBarrantes%20Ure%C3%B1a!5e0!3m2!1sen!2scr!4v1607028498089!5m2!1sen!2scr" allowfullscreen></iframe>
+        </div>
+        <div class="contacto">
+          <div class="tituloForm">
+            <h2>Contáctanos</h2>
+          </div>
+
+          <div class="formulario">
+            
+            <input type="text" class="form-control" id="txtNombre" placeholder="Nombre completo">
+            <input type="email" class="form-control" id="txtCorreo" placeholder="Correo Electrónico">
+            <input type="text" class="form-control" id="txtAsunto" placeholder="Asunto">
+            <div>
+              <textarea class="form-control" id="txtExplicar" cols="50" rows="5" placeholder="Cuentános como podemos ayudarte"></textarea>
+            </div>
+            <button type="submit" id="btnEnviar">Enviar</button>
+            
+            
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
     <hr>
     <!-- FOOTER -->
     <footer>
@@ -310,8 +322,8 @@
         <div>
           <ul class="social-icon">
             <li class="name">Jeremy</li>
-            <li><a href="#" class="fab fa-facebook-square"></a></li>
-            <li><a href="#" class="fab fa-instagram"></a></li>
+            <li><a href="https://www.facebook.com/jeremy.briones.ch" target="_blank" class="fab fa-facebook-square"></a></li>
+            <li><a href="https://www.instagram.com/j_brionesc/" target="_blank" class="fab fa-instagram"></a></li>
         </ul>
         </div>
         
@@ -321,8 +333,8 @@
         <div>
           <ul class="social-icon">
             <li class="name">Reymond</li>
-            <li><a href="#" class="fab fa-facebook-square"></a></li>
-            <li><a href="#" class="fab fa-instagram"></a></li>
+            <li><a href="https://www.facebook.com/reymond.rodrigues.391" target="_blank" class="fab fa-facebook-square"></a></li>
+            <li><a href="https://www.instagram.com/rey.yr/" target="_blank" class="fab fa-instagram"></a></li>
         </ul>
         </div>
         
