@@ -61,7 +61,22 @@
 	margin-left: 90px;
 }
 .historia #btnIniciar:hover{
-	background: #292929;
+	background: #0080c0;
+    color: #ffffff;
+}
+.historia #btnRegistrar{
+	margin-top: 100px;
+	background: #ce3232;
+    border-radius: 2px;
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
+	height: 50px;
+	width: 150px;
+	margin-left: 50px;
+}
+.historia #btnRegistrar:hover{
+	background: #008040;
     color: #ffffff;
 }
 
@@ -488,9 +503,13 @@ footer .horario .horas {
 	margin-left: -90px;
 	width: 190px;
 }
-footer .horario p {
+footer .horario p{
 	color:#d9d9d9;
 }
+footer .horario strong{
+	color:#ffffff;
+}
+
 
 
 footer .redes h4 {
