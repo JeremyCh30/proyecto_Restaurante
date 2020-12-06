@@ -9,10 +9,6 @@ const contacto_api = require('./contacto.api');
         contacto_api.registrar(req , res);
     });
 
-    router.route('/listar_contactos')
-    .get(function(req , res){
-        contacto_api.listar_contactos(req , res);
-    });
 
 
 module.exports = router;

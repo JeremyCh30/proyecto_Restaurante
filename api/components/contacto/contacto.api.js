@@ -5,12 +5,10 @@ const contacto_model=require('./contacto.model');
 module.exports.registrar=function(req, res){
     
     let nuevo_contacto=new contacto_model({
-        
-        
         nombre : req.body.nombre,
         correo : req.body.correo,
-        tema : req.body.contrasenna,
-        asunto: req.body.tipoUsuario,
+        tema : req.body.tema,
+        asunto : req.body.asunto
 
     });
 
@@ -25,11 +23,3 @@ module.exports.registrar=function(req, res){
     });
     
 };
-
-module.exports.listar_contactos = function(req , res){
-    contacto_model.find().sort({nombre: 'asc'}).then(
-        function(contactos){
-            res.send(contactos);
-        }
-    );
-}

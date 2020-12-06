@@ -21,13 +21,25 @@ function obtenerDatos(){
             text: 'Por favor verifique los campos marcados',
           })
     }else{
-        Swal.fire({
-            icon: 'success',
-            title: 'Su mensaje ha sido enviado',
-            showConfirmButton: false,
-            timer: 1500
-        })
-        setTimeout(function(){location.href='index.html'} , 1300);
+        let respuesta = registrarContacto(nombre, correo, asunto, explicar);
+        if(respuesta.success == true){
+            Swal.fire({
+                icon: 'success',
+                title: 'Su mensaje ha sido enviado',
+                text: respuesta.msg,
+                showConfirmButton: "Entendido",
+                timer: 1500
+            })
+            setTimeout(function(){location.href='index.html'} , 1300);
+        }else{
+            Swal.fire({
+                title: 'Registro incorrecto',
+                text: respuesta.msg,
+                type: 'error',
+                confirmButtonText: 'Entendido',
+            });
+        }
+        
     }
 
 };
@@ -68,11 +80,5 @@ function validar(pnombre, pcorreo, pasunto, pexplicar){
     
 };
 
-function mostrar(){
-    document.getElementsByClassName('inputWithIcon').style.opacity="1"
-}
-function ocultar(){
-    document.getElementsByClassName('inputWithIcon').style.opacity="0"
-}
 
 botonEnviar.addEventListener('click', obtenerDatos);

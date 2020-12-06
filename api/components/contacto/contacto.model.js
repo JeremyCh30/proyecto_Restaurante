@@ -3,11 +3,10 @@
 let mongoose =require('mongoose');
 
 let contacto_Schema=new mongoose.Schema({
-    Nombre : {type : String, unique : false, required : true},
-    correo : {type : String,  unique : true, required : true},
-    Tema : {type : String, unique : false, required : true},
-    Asunto : {type : String, unique : false, required : true},
-    estado: {type : String, unique : false, required : true}
+    nombre : {type : String,  unique : false, required : true},
+    correo : {type : String,  unique : false, required : true},
+    tema : {type : String,  unique : false, required : true},
+    asunto : {type : String,  unique : false, required : true}
 
 });
 

@@ -61,22 +61,7 @@
 	margin-left: 90px;
 }
 .historia #btnIniciar:hover{
-	background: #0080c0;
-    color: #ffffff;
-}
-.historia #btnRegistrar{
-	margin-top: 100px;
-	background: #ce3232;
-    border-radius: 2px;
-    border: 0;
-    color: #ffffff;
-    font-weight: bold;
-	height: 50px;
-	width: 150px;
-	margin-left: 50px;
-}
-.historia #btnRegistrar:hover{
-	background: #008040;
+	background: #a03b3b;
     color: #ffffff;
 }
 
