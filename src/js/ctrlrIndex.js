@@ -12,6 +12,7 @@ function obtenerDatos(){
     let asunto=inputAsunto.value;
     let explicar=txtAreaExplicar.value;
 
+    let mensajeWhatsapp="Ha recibido un mensaje de *"+nombre+"*, desde el formulario de Contacto de KND Restaurant. \n\nTema: *"+asunto+"* \n\nAsunto: "+explicar+" \n\nEnviar respuesta al correo del destinatario del mensaje, el cual es: *"+correo+"*"
     let error=validar(nombre, correo, asunto, explicar);
 
     if(error == true){
@@ -21,7 +22,7 @@ function obtenerDatos(){
             text: 'Por favor verifique los campos marcados',
           })
     }else{
-        let respuesta = registrarContacto(nombre, correo, asunto, explicar);
+        let respuesta = registrarContacto(nombre, correo, asunto, explicar, mensajeWhatsapp);
         if(respuesta.success == true){
             Swal.fire({
                 icon: 'success',
@@ -101,6 +102,7 @@ function initMap() {
         icon: '../imgs/marcador.png'
     });
 }
+
 
 
 botonEnviar.addEventListener('click', obtenerDatos);

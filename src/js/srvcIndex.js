@@ -1,6 +1,6 @@
 'use strict'
 
-function registrarContacto(pnombre, pcorreo, ptema, pasunto) {
+function registrarContacto(pnombre, pcorreo, ptema, pasunto, pMensajeWhatsapp) {
     let respuesta = '';
     let peticion = $.ajax({
         url: 'http://localhost:4000/api/registrar_contacto',
@@ -13,10 +13,12 @@ function registrarContacto(pnombre, pcorreo, ptema, pasunto) {
             nombre : pnombre,
             correo : pcorreo,
             tema : ptema,
-            asunto: pasunto
-
-        }
+            asunto: pasunto,
+            message : pMensajeWhatsapp
+        },
+        
     });
+    
 
     peticion.done(function (response) {
         respuesta = response;
