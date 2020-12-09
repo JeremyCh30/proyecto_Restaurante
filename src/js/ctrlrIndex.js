@@ -33,7 +33,7 @@ function obtenerDatos(){
             setTimeout(function(){location.href='index.html'} , 1300);
         }else{
             Swal.fire({
-                title: 'Registro incorrecto',
+                title: 'No se pudo enviar su mensaje',
                 text: respuesta.msg,
                 type: 'error',
                 confirmButtonText: 'Entendido',
@@ -79,6 +79,28 @@ function validar(pnombre, pcorreo, pasunto, pexplicar){
     return error;
     
 };
+
+/*
+Mapa con API de Googgle maps
+*/
+function initMap() {
+    var alajuelita={lat: 9.915657, lng: -84.116196}
+    var map = new google.maps.Map(document.getElementById('mapa'), {
+
+    zoom: 16,
+    center:alajuelita
+    });
+
+    var marker = new google.maps.Marker({
+        
+        position: {lat: 9.915657, lng: -84.116196},
+        map: map,
+        draggable: false,
+        animation: google.maps.Animation.BOUNCE,
+        
+        icon: '../imgs/marcador.png'
+    });
+}
 
 
 botonEnviar.addEventListener('click', obtenerDatos);
