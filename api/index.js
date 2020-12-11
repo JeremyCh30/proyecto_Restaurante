@@ -13,8 +13,8 @@ const express = require('express'),
 /**
  * Se definen las variables necesarias para la conexión con MongoDB
  */
-let db = mongoose.connection,
-    dburl = 'mongodb://jeremych:jbrionesc30@ds231719.mlab.com:31719/restaurante_fundavida',
+    let db = mongoose.connection,
+    dburl = 'mongodb+srv://jeremych:jbrionesc30@cluster0.m1smj.mongodb.net/restaurante_fundavida?retryWrites=true&w=majority',
     port = 4000;
 
 /**
@@ -65,6 +65,7 @@ app.use( function(req, res, next) {
 const contactos = require('./components/contacto/contacto.route');
 const admin = require('./components/admin/admin.route');
 const clientes = require('./components/cliente/cliente.route');
+const bebidas = require('./components/bebidas/bebida.route');
 
 /**
  * Le indicamos que le de acceso externo a las rutas inicializadas
@@ -72,6 +73,7 @@ const clientes = require('./components/cliente/cliente.route');
 app.use('/api', contactos);
 app.use('/api', admin);
 app.use('/api', clientes);
+app.use('/api', bebidas);
 
 // Se guarda todo lo que se ha realizado
 module.exports = app;

@@ -196,13 +196,17 @@ h4.contact:hover{
     width: 48%;
     display: inline-block;
     background: rgba(0,0,0,0.1);
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 .izquierda{  
     float: right;
     width: 40%;
     float: left;
     padding: 30px;
+}
+.izquierda img{
+    width: 180px;
 }
 .izquierda:hover{
     transform:scale(1.2);

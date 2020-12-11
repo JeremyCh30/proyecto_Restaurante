@@ -1,5 +1,8 @@
 'use strict'
 
+/****************
+    Registrar
+****************/
 function registrarContacto(pnombre, pcorreo, ptema, pasunto, pMensajeWhatsapp) {
     let respuesta = '';
     let peticion = $.ajax({
