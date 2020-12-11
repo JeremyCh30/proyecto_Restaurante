@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ul{
+    margin-top:30px;
+    list-style: none;
+    display: block;
+}
+main{
+    width: 100%;
+    display: flex;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background:#161616 ;
+}
+header span{
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    transition: all 300ms;
+    cursor: pointer;
+    position: relative;
+    top: 16px;
+    left: 10px;
+}
+header span:hover{
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+.content-menu{
+    width: 150px;
+    background: #161616;
+    transition: all 300ms;
+}
+.content-menu2{
+    margin-left: -150px;
+}
+.content-menu li{
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.content-menu li:hover{
+    transform: translateY(10px);
+    background: rgba(0,0,0,0.5);
+    
+}
+.content-menu li span{
+    font-size: 40px;
+}
+.content-menu li h4{
+    font-weight: 100;
+    transform: translateY(18px) translateX(-150px);
+    transition: all 300ms;
+    color: white;
+    
+}
+a{
+    text-decoration: none;
+}
+span#house{
+    color: white;
+}
+span#menu{
+    color: #1BBFB2;
+}
+span#express{
+    color:darkorange;
+}
+span#reser{
+    color:red;
+}
+span#ubicacion{
+    color:blue;
+}
+span#pago{
+    color: #6BF929;
+}
+span#contact{
+    color:yellow;
+}
+span#login{
+    color:coral;
+}
+.content-menu,.menu{
+    border-bottom: 2px solid #1BBFB2;
+}
+.content-menu:hover .inicio{
+    transform: translateX(0px);
+    transition: all 100ms;
+}
+.content-menu:hover .menu{
+    transform: translateX(0px);
+    transition: all 200ms;
+}
+.content-menu:hover .express{
+    transform: translateX(0px);
+    transition: all 300ms;
+}
+.content-menu:hover .reser{
+    transform: translateX(0px);
+    transition: all 400ms;
+}
+.content-menu:hover .ubicacion{
+    transform: translateX(0px);
+    transition: all 500ms;
+}
+.content-menu:hover .pago{
+    transform: translateX(0px);
+    transition: all 600ms;
+}
+.content-menu:hover .contact{
+    transform: translateX(0px);
+    transition: all 700ms;
+}
+.content-menu:hover .login{
+    transform: translateX(0px);
+    transition: all 800ms;
+}
+h4.menu:hover{
+    color: #1BBFB2;
+}
+h4.express:hover{
+    color:darkorange;
+}
+h4.reser:hover{
+    color: red;
+}
+h4.ubicacion:hover{
+    color: blue;
+}
+h4.pago:hover{
+    color: greenyellow;
+}
+h4.login:hover{
+    color:coral;
+}
+h4.contact:hover{
+    color: yellow;
+}
+article{
+    padding: 20px;
+    width: 100%;
+}
+article h1{
+    color: white;
+    font-family:'Brush Script MT';
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 10px  10px 10px #1BBFB2,
+               10px  10px 10px black,
+               10px  10px 10px #1BBFB2,
+               10px 10px 10px black;
+}
+article p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+article table{
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+h4.menu:hover{
+    color: #1BBFB2;
+}
+h4.express:hover{
+    color:darkorange;
+}
+h4.reser:hover{
+    color: red;
+}
+h4.ubicacion:hover{
+    color: blue;
+}
+h4.pago:hover{
+    color: greenyellow;
+}
+h4.login:hover{
+    color:coral;
+}
+h4.contact:hover{
+    color: yellow;
+}
+section{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    background: rgba(0,0,0,0.1);
+}
+/**/
+.card{
+    height: 235px;
+    width: 48%;
+    display: inline-block;
+    background: rgba(0,0,0,0.1);
+    margin-left: 10px;
+}
+.izquierda{  
+    float: right;
+    width: 40%;
+    float: left;
+    padding: 30px;
+}
+.izquierda:hover{
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); 
+    -moz-transform:scale(1.2); 
+    -webkit-transform:scale(1.2);
+    -o-transform:scale(1.2);
+}
+.derecha{
+    width:50%;
+    width: 60%;
+    float: right;
+}
+.derecha h3{
+    margin-top: 30px;
+    font-weight: lighter;
+}
+.derecha p{
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+    margin-top: 1px;  
+}
+.derecha span{
+    display: block;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+/**/
+div#sub{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+    margin: auto;
+}
+.nav > li{
+    float: left;
+}
+.nav li a{
+    display: block;
+
+    padding: 12px 12px;
+
+    text-decoration: none;
+
+    color: white;
+    border-radius: 0px;
+    background-color: black;
+    border: 0.1px solid white;
+}
+.nav li a:hover{
+    color: white;
+    background:#272727;
+}
+.nav li ul{
+    position: absolute;
+    display: none;
+    min-width: 130px;
+}
+.nav li:hover > ul{
+    display:contents;
+}
+.log{
+    background-color:#ce3232;
+    border-radius: 6px;
+    width: 100px;
+    height: 30px;
+    border:0;
+    color: #ffffff;
+}
+.log:hover{
+    cursor: pointer;
+	background: #a03b3b;
+    color: #ffffff;
+}
+li#des,#al,#ce,#mas{
+    width: 150px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+button.sec {
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 15px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 95%;
+  display: flex;
+}
+
+button.sec:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 12px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid black;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+div.iz{
+    width: 49%;
+    float: right;
+}
+div.der{
+    width:50%;
+}

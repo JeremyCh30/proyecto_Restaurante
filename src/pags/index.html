@@ -1,375 +1,394 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KND Restaurant</title>
-    <!--link bs-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!--link estilos-->
-    <link rel="stylesheet" href="../css/styleIndex.css">
-    <!--link fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <!--link fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Special+Elite&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KND Restaurant</title>
+  <!--link bs-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--link estilos-->
+  <link rel="stylesheet" href="../css/styleIndex.css">
+  <!--link fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <!--link fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Special+Elite&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <header>
-      <!--agregar un menu que se vea en los sliders-->
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-              <li data-target="#demo" data-slide-to="0" class="active"></li>
-              <li data-target="#demo" data-slide-to="1"></li>
-              <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../imgs/pancakes.jpg" alt="Los Angeles" width="1100" height="500">
-                <div class="carousel-caption">
-                  <h3>Desayunos</h3>
-                  <p>Deliciosos desayunos para compartir</p>
-                </div>   
-              </div>
-              <div class="carousel-item">
-                <img src="../imgs/salad.jpg" alt="Chicago" width="1100" height="500">
-                <div class="carousel-caption">
-                  <h3>Platos saludables</h3>
-                  <p>Almuerzos saludables</p>
-                </div>   
-              </div>
-              <div class="carousel-item">
-                <img src="../imgs/comidaCompartir.jpg" alt="New York" width="1100" height="500">
-                <div class="carousel-caption">
-                  <h3>Comparte tu tiempo</h3>
-                  <p>Ideal para una cita romántica con esa persona que tanto quieres</p>
-                </div>   
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
+  <header>
+    <!--agregar un menu que se vea en los sliders-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../imgs/pancakes.jpg" alt="Los Angeles" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>Desayunos</h3>
+            <p>Deliciosos desayunos para compartir</p>
           </div>
-    </header>
-
-    <main>
-      <div>
-        <div class="historia" id="historia">
-          <h4>Conoce nuestra Historia</h2>
-          <h2>KND Restaurant, la mejor comida al mejor precio desde el 2020</h2>
-          <p>Esta idea nace gracias al mezlar comida gourmet con un toque street, somos especialistas en comida con una mezcla de estilo mas familiar</p>
-          <p>Nuestra receta secreta secreta da un sentido distinto al paladar, apreciando cada sabor en que entra a la boca del cliente por medio de nuestros deliciosos platillos</p>
-          <p>Ven y disfruta de tu comida favorita</p>
-          <input type="button" id="btnIniciar" value="Inicio / Registro" onclick="window.location='./inicio_registro.html'"><!--cuando se cree el nav de la pagina incluir un boro que diga inicio / registro(NO DIVIRLO EN 2, SOLO 1)-->
-          
         </div>
-        <div class="imgHistoria">
-          <img src="../imgs/about-image.jpg" alt="">
-        </div>   
-    </div>
-
-      <h2 class="titulTarjetas">Conoce nuestros especialistas</h2>
-      <div class="contenedor">
-        <div class="contenedor_tarjeta">
-          <figure id="tarjeta">
-            <img src="../imgs/gonzalo.jpeg" class="frontal" alt="">
-            <figcaption class="trasera">
-              <h2 class="titulo">Gonzalo Morales</h2>
-              <h3 class="especialidad">Chef Rotisseur o de asados</h3>
-              <hr>
-              <p>Es el encargado de preparar las carnes asadas, a la parrilla o a las brasas en el menú. Su trabajo incluye trabajar con cualquier tipo de filete y carne o alimentos que le sean semejantes.
-              Se encarga de hablar y conseguir buenos proveedores de carnes, así como puede encargarse de distribuirla a otros lugares.</p>
-            </figcaption>
-          </figure>
-          </a>
+        <div class="carousel-item">
+          <img src="../imgs/salad.jpg" alt="Chicago" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>Platos saludables</h3>
+            <p>Almuerzos saludables</p>
+          </div>
         </div>
-
-        <div class="contenedor_tarjeta">
-          <figure id="tarjeta">
-            <img src="../imgs/reymond.jpeg" class="frontal" alt="">
-            <figcaption class="trasera">
-              <h2 class="titulo">Reymond Rodríguez</h2>
-              <h3 class="especialidad">Chef Patissier o de Repostería</h3>
-              <hr>
-              <p>Es quien se encarga de los postres.
-              La estación de cocina del patissier es la principal encargada de preparar toda la comida que implique ser horneada, es decir, tanto panes como pasteles
-              Entre más variedad de repostería domine este chef , mayor será la elegancia y disciplina artística que demuestre en la cocina.</p>
-            </figcaption>
-          </figure>
-          </a>
-        </div>
-
-        <div class="contenedor_tarjeta">
-            <figure id="tarjeta">
-              <img src="../imgs/jeremy.jpeg" class="frontal" alt="">
-              <figcaption class="trasera">
-                <h2 class="titulo">Jeremy Briones</h2>
-                <h3 class="especialidad">Chef Saucier o de salsas</h3>
-                <hr>
-                <p>Mejor conocido como sauce chef, es uno de los rangos más respetados dentro de la cocina. Su trabajo tiene tanto peso que reporta todo directamente al Chef principal o al sous chef.
-                Es responsable de diferentes tareas en la cocina, como sazonar los alimentos, preparar las sopas y los guisos.
-                </p> 
-                  
-              </figcaption>
-            </figure>
-          </a>
+        <div class="carousel-item">
+          <img src="../imgs/comidaCompartir.jpg" alt="New York" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>Comparte tu tiempo</h3>
+            <p>Ideal para una cita romántica con esa persona que tanto quieres</p>
+          </div>
         </div>
       </div>
-      
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </header>
 
-      
+  <main>
+    <div>
+      <div class="historia" id="historia">
+        <h4>Conoce nuestra Historia</h2>
+          <h2>KND Restaurant, la mejor comida al mejor precio desde el 2020</h2>
+          <p>Esta idea nace gracias al mezlar comida gourmet con un toque street, somos especialistas en comida con una
+            mezcla de estilo mas familiar</p>
+          <p>Nuestra receta secreta secreta da un sentido distinto al paladar, apreciando cada sabor en que entra a la
+            boca del cliente por medio de nuestros deliciosos platillos</p>
+          <p>Ven y disfruta de tu comida favorita</p>
+          <input type="button" id="btnIniciar" value="Inicio / Registro"
+            onclick="window.location='./inicio_registro.html'">
+          <!--cuando se cree el nav de la pagina incluir un boro que diga inicio / registro(NO DIVIRLO EN 2, SOLO 1)-->
 
-      
-      <section id="menu" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row">
+      </div>
+      <div class="imgHistoria">
+        <img src="../imgs/about-image.jpg" alt="">
+      </div>
+    </div>
 
-            <div class="col-md-12 col-sm-12">
-                  <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                      <h2 class="titPlatillos">Algunos platillos</h2>
-                      
-                  </div>
+    <h2 class="titulTarjetas">Conoce nuestros especialistas</h2>
+    <div class="contenedor">
+      <div class="contenedor_tarjeta">
+        <figure id="tarjeta">
+          <img src="../imgs/gonzalo.jpeg" class="frontal" alt="">
+          <figcaption class="trasera">
+            <h2 class="titulo">Gonzalo Morales</h2>
+            <h3 class="especialidad">Chef Rotisseur o de asados</h3>
+            <hr>
+            <p>Es el encargado de preparar las carnes asadas, a la parrilla o a las brasas en el menú. Su trabajo
+              incluye trabajar con cualquier tipo de filete y carne o alimentos que le sean semejantes.
+              Se encarga de hablar y conseguir buenos proveedores de carnes, así como puede encargarse de distribuirla a
+              otros lugares.</p>
+          </figcaption>
+        </figure>
+        </a>
+      </div>
+
+      <div class="contenedor_tarjeta">
+        <figure id="tarjeta">
+          <img src="../imgs/reymond.jpeg" class="frontal" alt="">
+          <figcaption class="trasera">
+            <h2 class="titulo">Reymond Rodríguez</h2>
+            <h3 class="especialidad">Chef Patissier o de Repostería</h3>
+            <hr>
+            <p>Es quien se encarga de los postres.
+              La estación de cocina del patissier es la principal encargada de preparar toda la comida que implique ser
+              horneada, es decir, tanto panes como pasteles
+              Entre más variedad de repostería domine este chef , mayor será la elegancia y disciplina artística que
+              demuestre en la cocina.</p>
+          </figcaption>
+        </figure>
+        </a>
+      </div>
+
+      <div class="contenedor_tarjeta">
+        <figure id="tarjeta">
+          <img src="../imgs/jeremy.jpeg" class="frontal" alt="">
+          <figcaption class="trasera">
+            <h2 class="titulo">Jeremy Briones</h2>
+            <h3 class="especialidad">Chef Saucier o de salsas</h3>
+            <hr>
+            <p>Mejor conocido como sauce chef, es uno de los rangos más respetados dentro de la cocina. Su trabajo tiene
+              tanto peso que reporta todo directamente al Chef principal o al sous chef.
+              Es responsable de diferentes tareas en la cocina, como sazonar los alimentos, preparar las sopas y los
+              guisos.
+            </p>
+
+          </figcaption>
+        </figure>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+    <section id="menu" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+              <h2 class="titPlatillos">Algunos platillos</h2>
+
             </div>
-
-            <div class="col-md-4 col-sm-6">
-                  <!-- MENU THUMB -->
-                  <div class="menu-thumb">
-                      <a href="../imgs/hotcakes.jpg" class="image-popup" title="American Breakfast">
-                            <img src="../imgs/hotcakes.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
-
-                            <div class="menu-info">
-                                <div class="menu-item">
-                                      <h3>hotcakes con banano</h3>
-                                      <p>Harina / Huevos / Banano</p>
-                                </div>
-                                <div class="menu-price">
-                                      <span>₡2500</span>
-                                </div>
-                            </div>
-                      </a>
-                  </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-                  <!-- MENU THUMB -->
-                  <div class="menu-thumb">
-                      <a href="../imgs/ensalada_cesar.jpg" class="image-popup" title="Self-made Salad">
-                            <img src="../imgs/ensalada_cesar.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
-
-                            <div class="menu-info">
-                                <div class="menu-item">
-                                      <h3>Ensalada césar</h3>
-                                      <p>Langostino / Queso Parmesano / Lechuga</p>
-                                </div>
-                                <div class="menu-price">
-                                      <span>₡4000</span>
-                                </div>
-                            </div>
-                      </a>
-                  </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-                  <!-- MENU THUMB -->
-                  <div class="menu-thumb">
-                      <a href="../imgs/rice&beans.jpg" class="image-popup" title="Chinese Noodle">
-                            <img src="../imgs/rice&beans.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
-
-                            <div class="menu-info">
-                                <div class="menu-item">
-                                      <h3>Rice And Beans</h3>
-                                      <p>Arroz / Coco / Pollo</p>
-                                </div>
-                                <div class="menu-price">
-                                      <span>₡3500</span>
-                                </div>
-                            </div>
-                      </a>
-                  </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-                  <!-- MENU THUMB -->
-                  <div class="menu-thumb">
-                      <a href="../imgs/pasta_pomodoro.jpg" class="image-popup" title="Rice Soup">
-                            <img src="../imgs/pasta_pomodoro.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
-
-                            <div class="menu-info">
-                                <div class="menu-item">
-                                      <h3>Pasta al Pomodoro</h3>
-                                      <p>Pasta / Salsa / Cebolla</p>
-                                </div>
-                                <div class="menu-price">
-                                      <span>₡3000</span>
-                                </div>
-                            </div>
-                      </a>
-                  </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-                  <!-- MENU THUMB -->
-                  <div class="menu-thumb">
-                      <a href="../imgs/tiramisu.jpg" class="image-popup" title="Project title">
-                            <img src="../imgs/tiramisu.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
-
-                            <div class="menu-info">
-                                <div class="menu-item">
-                                      <h3>Porción de tiramisú</h3>
-                                      <p>Galletas / Café / Crema Batida</p>
-                                </div>
-                                <div class="menu-price">
-                                      <span>$1000</span>
-                                </div>
-                            </div>
-                      </a>
-                  </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-                  <!-- MENU THUMB -->
-                  <div class="menu-thumb">
-                      <a href="../imgs/Tacos_Pastor.jpg" class="image-popup" title="Project title">
-                            <img src="../imgs/Tacos_Pastor.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
-
-                            <div class="menu-info">
-                                <div class="menu-item">
-                                      <h3>Tacos al Pastor</h3>
-                                      <p>Tortilla / Lomo / Chile</p>
-                                </div>
-                                <div class="menu-price">
-                                      <span>4000</span>
-                                </div>
-                            </div>
-                      </a>
-                  </div>
-            </div>
-
-
           </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a href="../imgs/hotcakes.jpg" class="image-popup" title="American Breakfast">
+                <img src="../imgs/hotcakes.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                <div class="menu-info">
+                  <div class="menu-item">
+                    <h3>hotcakes con banano</h3>
+                    <p>Harina / Huevos / Banano</p>
+                  </div>
+                  <div class="menu-price">
+                    <span>₡2500</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a href="../imgs/ensalada_cesar.jpg" class="image-popup" title="Self-made Salad">
+                <img src="../imgs/ensalada_cesar.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                <div class="menu-info">
+                  <div class="menu-item">
+                    <h3>Ensalada césar</h3>
+                    <p>Langostino / Queso Parmesano / Lechuga</p>
+                  </div>
+                  <div class="menu-price">
+                    <span>₡4000</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a href="../imgs/rice&beans.jpg" class="image-popup" title="Chinese Noodle">
+                <img src="../imgs/rice&beans.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                <div class="menu-info">
+                  <div class="menu-item">
+                    <h3>Rice And Beans</h3>
+                    <p>Arroz / Coco / Pollo</p>
+                  </div>
+                  <div class="menu-price">
+                    <span>₡3500</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a href="../imgs/pasta_pomodoro.jpg" class="image-popup" title="Rice Soup">
+                <img src="../imgs/pasta_pomodoro.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                <div class="menu-info">
+                  <div class="menu-item">
+                    <h3>Pasta al Pomodoro</h3>
+                    <p>Pasta / Salsa / Cebolla</p>
+                  </div>
+                  <div class="menu-price">
+                    <span>₡3000</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a href="../imgs/tiramisu.jpg" class="image-popup" title="Project title">
+                <img src="../imgs/tiramisu.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                <div class="menu-info">
+                  <div class="menu-item">
+                    <h3>Porción de tiramisú</h3>
+                    <p>Galletas / Café / Crema Batida</p>
+                  </div>
+                  <div class="menu-price">
+                    <span>$1000</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a href="../imgs/Tacos_Pastor.jpg" class="image-popup" title="Project title">
+                <img src="../imgs/Tacos_Pastor.jpg" class="img-responsive" alt="" width="387.59px" height="387.59px">
+
+                <div class="menu-info">
+                  <div class="menu-item">
+                    <h3>Tacos al Pastor</h3>
+                    <p>Tortilla / Lomo / Chile</p>
+                  </div>
+                  <div class="menu-price">
+                    <span>4000</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
         </div>
+      </div>
     </section>
 
 
-      
 
-      <!-- CONTACTANOS -->
-      <section id="contactanos">
-        <div id="mapa">
 
-        </div>
-        <div class="contacto">
-          <div class="tituloForm">
-            <h2>Contáctanos</h2>
-          </div>
+    <!-- CONTACTANOS -->
+    <section id="contactanos">
+      <div id="mapa">
 
-          <div class="formulario">
-            <div class="inputWithIcon">
-              <input type="text" class="form-control" id="txtNombre" placeholder="Nombre completo">
-              <i id="iconNombre"></i>
-            </div>
-            <div class="inputWithIcon">
-              <input type="email" class="form-control" id="txtCorreo" placeholder="Correo Electrónico">
-              <i id="iconEmail"></i>
-            </div>
-            <div class="inputWithIcon">
-              <input type="text" class="form-control" id="txtAsunto" placeholder="Asunto">
-              <i id="iconAsunto"></i>
-            </div>
-            
-            <div class="inputWithIcon">
-              <textarea class="form-control" id="txtExplicar" cols="50" rows="5" placeholder="Cuentános como podemos ayudarte"></textarea>
-              <i id="iconExplicacion"></i>
-            </div>
-            <button type="submit" id="btnEnviar">Enviar</button>
-            
-            
-          </div>
-
+      </div>
+      <div class="contacto">
+        <div class="tituloForm">
+          <h2>Contáctanos</h2>
         </div>
 
-      </section>
-
-    </main>
-    <hr>
-    <!-- FOOTER -->
-    <footer>
-      <div class="ubicacion">
-        <h4>Encuéntranos</h4>
-        <p>Av. 2, Corina Rodriguez, San José, Alajuelita</p>
-        
-      </div>
-      <div class="reservacion">
-        <h4>Reservaciones</h4>
-        <p class="tel">2222-2222/8888-8888</p>
-        <p class="mail"><a href="mailto:info@knd.com">info@knd.com</a></p>
-      </div>
-      <div class="horario">
-        <h4>Horario</h4>
-        <div class="horas">
-          <div>
-            <p>Lunes: Cerrado</p>
+        <div class="formulario">
+          <div class="inputWithIcon">
+            <input type="text" class="form-control" id="txtNombre" placeholder="Nombre completo">
+            <i id="iconNombre"></i>
           </div>
-          <div>
-            <strong>Martes a Viernes</strong>
+          <div class="inputWithIcon">
+            <input type="email" class="form-control" id="txtCorreo" placeholder="Correo Electrónico">
+            <i id="iconEmail"></i>
+          </div>
+          <div class="inputWithIcon">
+            <input type="text" class="form-control" id="txtAsunto" placeholder="Asunto">
+            <i id="iconAsunto"></i>
+          </div>
+
+          <div class="inputWithIcon">
+            <textarea class="form-control" id="txtExplicar" cols="50" rows="5"
+              placeholder="Cuentános como podemos ayudarte"></textarea>
+            <i id="iconExplicacion"></i>
+          </div>
+          <button type="submit" id="btnEnviar">Enviar</button>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+  <hr>
+  <!-- FOOTER -->
+  <footer>
+    <div class="ubicacion">
+      <h4>Encuéntranos</h4>
+      <p>Av. 2, Corina Rodriguez, San José, Alajuelita</p>
+
+    </div>
+    <div class="reservacion">
+      <h4>Reservaciones</h4>
+      <p class="tel">2222-2222/8888-8888</p>
+      <p class="mail"><a href="mailto:info@knd.com">info@knd.com</a></p>
+    </div>
+    <div class="horario">
+      <h4>Horario</h4>
+      <div class="horas">
+        <div>
+          <p>Lunes: Cerrado</p>
+        </div>
+        <div>
+          <strong>Martes a Viernes</strong>
           <p>7:00 AM - 9:00 PM</p>
-          </div>
-          <div>
-            <strong>Sabado - Domingo</strong>
-            <p>11:00 AM - 10:00 PM</p>
-          </div>
-          
-        </div>
-          
-        </div>
-      <div class="redes">
-        <h4>Sigue a nuestros expertos</h4>        
-        <div>
-          <ul class="social-icon">
-            <li class="name">Jeremy</li>
-            <li><a href="https://www.facebook.com/jeremy.briones.ch" target="_blank" class="fab fa-facebook-square"></a></li>
-            <li><a href="https://www.instagram.com/j_brionesc/" target="_blank" class="fab fa-instagram"></a></li>
-        </ul>
-        </div>
-        
-        <div class="vl">
-
         </div>
         <div>
-          <ul class="social-icon">
-            <li class="name">Reymond</li>
-            <li><a href="https://www.facebook.com/reymond.rodrigues.391" target="_blank" class="fab fa-facebook-square"></a></li>
-            <li><a href="https://www.instagram.com/rey.yr/" target="_blank" class="fab fa-instagram"></a></li>
-        </ul>
+          <strong>Sabado - Domingo</strong>
+          <p>11:00 AM - 10:00 PM</p>
         </div>
-        
 
-      <div class="copy"> 
-          <p><br>Copyright &copy; 2020 <br> KND TEAM</p>
       </div>
-    </footer>
+
+    </div>
+    <div class="redes">
+      <h4>Sigue a nuestros expertos</h4>
+      <div>
+        <ul class="social-icon">
+          <li class="name">Jeremy</li>
+          <li><a href="https://www.facebook.com/jeremy.briones.ch" target="_blank" class="fab fa-facebook-square"></a>
+          </li>
+          <li><a href="https://www.instagram.com/j_brionesc/" target="_blank" class="fab fa-instagram"></a></li>
+        </ul>
+      </div>
+
+      <div class="vl">
+
+      </div>
+      <div>
+        <ul class="social-icon">
+          <li class="name">Reymond</li>
+          <li><a href="https://www.facebook.com/reymond.rodrigues.391" target="_blank"
+              class="fab fa-facebook-square"></a></li>
+          <li><a href="https://www.instagram.com/rey.yr/" target="_blank" class="fab fa-instagram"></a></li>
+        </ul>
+      </div>
 
 
-    
+      <div class="copy">
+        <p><br>Copyright &copy; 2020 <br> KND TEAM</p>
+      </div>
+  </footer>
 
-    <!--link scripts bs-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!--link script SweetAlert-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
-    <!--link script index-->
-    <script src="../js/srvcIndex.js"></script>
-    <script src="../js/ctrlrIndex.js"></script>
-    <!--link API Google maps-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5yOsQ35oW_LDyINjUDJ3e9WhIkjZhzTg&callback=initMap" async defer></script>
-    
+
+
+
+  <!--link scripts bs-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--link script SweetAlert-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+  <!--link script index-->
+  <script src="../js/srvcIndex.js"></script>
+  <script src="../js/ctrlrIndex.js"></script>
+  <!--link API Google maps-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5yOsQ35oW_LDyINjUDJ3e9WhIkjZhzTg&callback=initMap"
+    async defer></script>
+
 
 </body>
+
 </html>
