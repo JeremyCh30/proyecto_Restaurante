@@ -66,7 +66,10 @@ const contactos = require('./components/contacto/contacto.route');
 const admin = require('./components/admin/admin.route');
 const clientes = require('./components/cliente/cliente.route');
 const bebidas = require('./components/bebidas/bebida.route');
-
+const almuerzos = require('./components/almuerzos/almuerzo.route');
+const cenas = require('./components/cenas/cena.route');
+const desayunos = require('./components/desayunos/desayuno.route');
+const postres = require('./components/postres/postre.route');
 /**
  * Le indicamos que le de acceso externo a las rutas inicializadas
  */
@@ -74,6 +77,10 @@ app.use('/api', contactos);
 app.use('/api', admin);
 app.use('/api', clientes);
 app.use('/api', bebidas);
+app.use('/api', almuerzos);
+app.use('/api', cenas);
+app.use('/api', desayunos);
+app.use('/api', postres);
 
 // Se guarda todo lo que se ha realizado
 module.exports = app;

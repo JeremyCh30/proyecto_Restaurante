@@ -207,6 +207,7 @@ h4.contact:hover{
 }
 .izquierda img{
     width: 180px;
+    height: 180px;
 }
 .izquierda:hover{
     transform:scale(1.2);
@@ -216,8 +217,7 @@ h4.contact:hover{
     -o-transform:scale(1.2);
 }
 .derecha{
-    width:50%;
-    width: 60%;
+    width:56%;
     float: right;
 }
 .derecha h3{
