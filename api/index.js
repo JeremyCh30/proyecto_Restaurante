@@ -18,9 +18,17 @@ const express = require('express'),
     port = 4000;
 
 /**
+ * settings
+ */
+app.set('port', process.env.PORT || 3000);
+
+
+/**
  * Se le indica que cree un servidor extra dentro del puerto 4000 y escuche los cambios que se le hagan a esos archivos
  */
-let server = app.listen(port,_server());
+let server = app.listen(app.get('port'), () =>{
+    console.log('Back-end corriendo en el puerto ' + app.get('port'))
+});
 
 /**
  * Se define la conexión con Mongoose, enviándole como parámetro la url de la base de datos
@@ -38,7 +46,10 @@ db.on('error', console.error.bind(console, 'Error de conexión: '));
 db.once('open', function () {
   console.log('Base de datos conectada correctamente');
 });
-
+/**
+ * settings
+ */
+app.set('port', process.env.PORT || 3000);
 /**
  * Le indicamos a express que envíe las respuestas a la carpeta "public"
  */
@@ -88,6 +99,6 @@ app.use('/api', recuperar);
 // Se guarda todo lo que se ha realizado
 module.exports = app;
 
-function _server(){
+/* function _server(){
   console.log('Back-end corriendo en el puerto ' + port);
-};
+}; */
