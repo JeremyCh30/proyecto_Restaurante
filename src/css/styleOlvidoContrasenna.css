@@ -1,0 +1,40 @@
+
+
+
+/*formulario*/
+.form{
+    margin-left: 32%;
+    margin-top: 10%;
+}
+.lbl{
+    font-size: 24px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+}
+
+.ipt input{
+    width: 400px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button{
+    background: #ce3232;
+    border-radius: 2px;
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
+	height: 40px;
+    width: 150px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: #a03b3b;
+    color: #ffffff;
+}
+#btnEnviar{
+    margin-left: 102px;
+}

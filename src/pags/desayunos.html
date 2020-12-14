@@ -1,185 +1,186 @@
 <!DOCTYPE html>
- <html lang="es">
+<html lang="es">
 
- <head>
-   <meta charset="UTF-8">
-   <title>Desayuno KND</title>
-   <link rel="stylesheet" href="../css/styleDesayunos.css">
-   <link rel="stylesheet" href="../css/styleIcon.css">
-   <style>
-     body {
-       background-image: url(../imgs/Fondos.jpg);
-       width: 100%;
-       height: 100%;
-       background-size: cover;
-     }
-   </style>
+<head>
+  <meta charset="UTF-8">
+  <title>Desayuno KND</title>
+  <link rel="stylesheet" href="../css/styleDesayunos.css">
+  <link rel="stylesheet" href="../css/styleIcon.css">
+  <style>
+    body {
+      background-image: url(../imgs/Fondos.jpg);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+  </style>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 
- <body>
-   <header id="des"><span class="lnr lnr-menu show"></span></header>
-   <main>
-     <div class="content-menu">
-       <ul>
-         <li><a href="indexd.html"><span id="house"><svg width="1em" height="1em" viewBox="0 0 16 16"
-                 class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                 <path fill-rule="evenodd"
-                   d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                 <path fill-rule="evenodd"
-                   d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-               </svg></span>
-             <h4 class="inicio">Inicio</h4>
-           </a></li>
-         <li><a href="menu.html"><span id="menu"><svg width="1em" height="1em" viewBox="0 0 16 16"
-                 class="bi bi-menu-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                 <path fill-rule="evenodd"
-                   d="M15 13V4a1 1 0 0 0-1-1h-3.586A2 2 0 0 1 9 2.414l-1-1-1 1A2 2 0 0 1 5.586 3H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3.586a1 1 0 0 1-.707-.293L8.354.354a.5.5 0 0 0-.708 0L6.293 1.707A1 1 0 0 1 5.586 2H2z" />
-                 <path fill-rule="evenodd"
-                   d="M15 11H1v-1h14v1zm0-4H1V6h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5z" />
-               </svg></span>
-             <h4 class="menu">Menú</h4>
-           </a></li>
-         <li><a href="express.html"><span id="express"><svg width="1em" height="1em" viewBox="0 0 16 16"
-                 class="bi bi-bicycle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                 <path fill-rule="evenodd"
-                   d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />
-               </svg></span>
-             <h4 class="express">Express</h4>
-           </a></li>
-         <li><a href="reservaciones.html"><span id="reser"><svg width="1em" height="1em" viewBox="0 0 16 16"
-                 class="bi bi-journal-bookmark-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                 <path
-                   d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
-                 <path
-                   d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
-                 <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z" />
-               </svg></span>
-             <h4 class="reser">Reservaciones</h4>
-           </a></li>
-         <li><a href=""><span id="ubicacion"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt"
-                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                 <path fill-rule="evenodd"
-                   d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
-                 <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-               </svg></span>
-             <h4 class="ubicacion">Ubicación</h4>
-           </a></li>
-         <li><a href=""><span id="pago"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card-fill"
-                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4z" />
-                 <path fill-rule="evenodd"
-                   d="M0 7v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H3z" />
-               </svg></span>
-             <h4 class="pago">Metodo de pago</h4>
-           </a></li>
-         <li><a href=""><span id="contact"><svg width="1em" height="1em" viewBox="0 0 16 16"
-                 class="bi bi-person-lines-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                 <path fill-rule="evenodd"
-                   d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
-               </svg></span>
-             <h4 class="contact">Contactenos</h4>
-           </a></li>
-         <li><a href=""><span id="login"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-right"
-                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                 <path fill-rule="evenodd"
-                   d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
-                 <path fill-rule="evenodd"
-                   d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-               </svg></span>
-             <h4 class="login">Iniciar sesion</h4>
-           </a></li>
-       </ul>
-     </div>
-     <article>
-       <h1><img src="../imgs/KNDM.png" alt="KND" width="170px" height="140px"> RESTAURANT</h1><br />
-       <header id="menu">
-         <div id="sub" aling="center">
-           <ul class="nav">
-             <li id="des"><a href="desayunos.html">Desayunos</a></li>
-             <li id="al"><a href="almuerzo.html">Almuerzo</a></li>
-             <li id="ce"><a href="cena.html">Cena</a></li>
-             <li id="mas"><a href="#">Más ▾</a>
-               <ul>
-                 <li><a href="bebidas.html">Bebidas</a></li>
-                 <li><a href="postres.html">Postres</a></li>
-               </ul>
-             </li>
-             <li></li>
-           </ul><br /><br /><br />
-         </div>
-       </header> <br /><br /><br />
-       
-       <div id="tarjetaDes">
-         
+<body>
+  <header id="des"><span class="lnr lnr-menu show"></span></header>
+  <main>
+    <div class="content-menu">
+      <ul id="nav_principal">
+        <li><a href="desayunos.html"><span id="house"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                <path fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+              </svg></span>
+            <h4 class="inicio">Inicio</h4>
+          </a></li>
+        <li><a href="desayunos.html"><span id="menu"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-menu-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M15 13V4a1 1 0 0 0-1-1h-3.586A2 2 0 0 1 9 2.414l-1-1-1 1A2 2 0 0 1 5.586 3H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3.586a1 1 0 0 1-.707-.293L8.354.354a.5.5 0 0 0-.708 0L6.293 1.707A1 1 0 0 1 5.586 2H2z" />
+                <path fill-rule="evenodd"
+                  d="M15 11H1v-1h14v1zm0-4H1V6h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5z" />
+              </svg></span>
+            <h4 class="menu">Menú</h4>
+          </a></li>
+        <li><a href="pedidos.html"><span id="express"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-bicycle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />
+              </svg></span>
+            <h4 class="express">Express</h4>
+          </a></li>
+        <li><a href="reservaciones.html"><span id="reser"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-journal-bookmark-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                <path
+                  d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z" />
+              </svg></span>
+            <h4 class="reser">Reservaciones</h4>
+          </a></li>
+        <li><a href=""><span id="ubicacion"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg></span>
+            <h4 class="ubicacion">Ubicación</h4>
+          </a></li>
+        <li><a href=""><span id="pago"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card-fill"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4z" />
+                <path fill-rule="evenodd"
+                  d="M0 7v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H3z" />
+              </svg></span>
+            <h4 class="pago">Metodo de pago</h4>
+          </a></li>
+        <li><a href=""><span id="contact"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-person-lines-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+              </svg></span>
+            <h4 class="contact">Contactenos</h4>
+          </a></li>
+        <li><a href=""><span id="login"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-right"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                <path fill-rule="evenodd"
+                  d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+              </svg></span>
+            <h4 class="login">Cerrar Sesión</h4>
+          </a></li>
+      </ul>
+    </div>
+    <article>
+      <h1><img src="../imgs/KNDM.png" alt="KND" width="170px" height="140px"> RESTAURANT</h1><br />
+      <header id="menu">
+        <div id="sub" aling="center">
+          <ul class="nav">
+            <li id="des"><a href="desayunos.html">Desayunos</a></li>
+            <li id="al"><a href="almuerzo.html">Almuerzo</a></li>
+            <li id="ce"><a href="cena.html">Cena</a></li>
+            <li id="mas"><a href="#">Más ▾</a>
+              <ul>
+                <li><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="postres.html">Postres</a></li>
+              </ul>
+            </li>
+            <li></li>
+          </ul><br /><br /><br />
+        </div>
+      </header> <br /><br /><br />
+
+      <div id="tarjetaDes">
+
       </div>
 
-       <!-- The Modal -->
-       <div class="fondo">
+      <!-- The Modal -->
+      <div class="fondo">
 
-         <div id="id01" class="modal">
+        <div id="id01" class="modal">
 
-           <form class="modal-content animate" action="/action_page.php" method="post">
-             <style>
-               form {
-                 background-image: url(../imgs/Fondos.jpg);
-                 width: 100%;
-               }
-             </style>
-             <div class="imgcontainer">
-               <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                 title="Close Modal">&times;</span>
-               <img src="../imgs/KNDM.png" alt="Avatar" class="avatar">
-             </div>
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <style>
+              form {
+                background-image: url(../imgs/Fondos.jpg);
+                width: 100%;
+              }
+            </style>
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+              <img src="../imgs/KNDM.png" alt="Avatar" class="avatar">
+            </div>
 
-             <div class="container">
-               <div class="iz">
-                 <button class="sec" type="submit"><span id="express"><svg width="5em" height="5em" viewBox="0 0 16 16"
-                       class="bi bi-bicycle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                       <path fill-rule="evenodd"
-                         d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />
-                     </svg></span>
-                   <h3 class="express">Entrega a domicilio</h3>
-                 </button></div>
-               <div class="der">
-                 <button class="sec" type="submit"><span id="express"><svg width="5em" height="5em" viewBox="0 0 16 16"
-                       class="bi bi-door-open" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                       <path fill-rule="evenodd"
-                         d="M1 15.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM11.5 2H11V1h.5A1.5 1.5 0 0 1 13 2.5V15h-1V2.5a.5.5 0 0 0-.5-.5z" />
-                       <path fill-rule="evenodd"
-                         d="M10.828.122A.5.5 0 0 1 11 .5V15h-1V1.077l-6 .857V15H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117z" />
-                       <path d="M8 9c0 .552.224 1 .5 1s.5-.448.5-1-.224-1-.5-1-.5.448-.5 1z" />
-                     </svg></span>
-                   <h3 class="express">Para retirar</h3>
-                 </button></div>
-             </div>
+            <div class="container">
+              <div class="iz">
+                <button class="sec" type="submit"><span id="express"><svg width="5em" height="5em" viewBox="0 0 16 16"
+                      class="bi bi-bicycle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />
+                    </svg></span>
+                  <h3 class="express">Entrega a domicilio</h3>
+                </button></div>
+              <div class="der">
+                <button class="sec" type="submit"><span id="express"><svg width="5em" height="5em" viewBox="0 0 16 16"
+                      class="bi bi-door-open" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M1 15.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM11.5 2H11V1h.5A1.5 1.5 0 0 1 13 2.5V15h-1V2.5a.5.5 0 0 0-.5-.5z" />
+                      <path fill-rule="evenodd"
+                        d="M10.828.122A.5.5 0 0 1 11 .5V15h-1V1.077l-6 .857V15H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117z" />
+                      <path d="M8 9c0 .552.224 1 .5 1s.5-.448.5-1-.224-1-.5-1-.5.448-.5 1z" />
+                    </svg></span>
+                  <h3 class="express">Para retirar</h3>
+                </button></div>
+            </div>
 
-             <div class="container">
-               <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                 class="cancelbtn">Cancel</button>
-             </div>
-           </form>
-         </div>
-       </div>
-       <script>
-         // Get the modal
-         var modal = document.getElementById('id01');
+            <div class="container">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
 
-         // When the user clicks anywhere outside of the modal, close it
-         window.onclick = function (event) {
-           if (event.target == modal) {
-             modal.style.display = "none";
-           }
-         }
-       </script>
-     </article>
-   </main>
-   <script src="../js/jquery.js"></script>
-   <script src="../js/scriptMenus.js"></script>
-   <script src="../js/srvcDesayunos.js"></script>
-   <script src="../js/ctrlrDesayunos.js"></script>
- </body>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+    </article>
+  </main>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/scriptMenus.js"></script>
+  <script src="../js/ctrlrNav.js"></script>
+  <script src="../js/srvcDesayunos.js"></script>
+  <script src="../js/ctrlrDesayunos.js"></script>
+</body>
 
- </html>
+</html>

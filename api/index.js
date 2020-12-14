@@ -70,6 +70,8 @@ const almuerzos = require('./components/almuerzos/almuerzo.route');
 const cenas = require('./components/cenas/cena.route');
 const desayunos = require('./components/desayunos/desayuno.route');
 const postres = require('./components/postres/postre.route');
+const login = require('./components/login/login.route');
+const recuperar = require('./components/recuperar/recuperar.route');
 /**
  * Le indicamos que le de acceso externo a las rutas inicializadas
  */
@@ -81,6 +83,7 @@ app.use('/api', almuerzos);
 app.use('/api', cenas);
 app.use('/api', desayunos);
 app.use('/api', postres);
+app.use('/api', recuperar);
 
 // Se guarda todo lo que se ha realizado
 module.exports = app;

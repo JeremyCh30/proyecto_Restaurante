@@ -22,21 +22,21 @@
       <div id="signup">
         <h1>Registrar cuenta gratis</h1>
 
-        <form action="/" method="post">
+        <div>
 
           <div class="top-row">
             <div class="field-wrap">
               <label>
                 Nombre<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input type="text" required autocomplete="off" id="txtNombreReg"/>
             </div>
 
             <div class="field-wrap">
               <label>
-                Apellido<span class="req">*</span>
+                Apellidos<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input type="text" required autocomplete="off" id="txtApellidosReg"/>
             </div>
           </div>
 
@@ -44,47 +44,47 @@
             <label>
               Correo electrónico<span class="req">*</span>
             </label>
-            <input type="email" required autocomplete="off" />
+            <input type="email" required autocomplete="off" id="txtCorreoReg"/>
           </div>
 
           <div class="field-wrap">
             <label>
               Contraseña<span class="req">*</span>
             </label>
-            <input type="password" required autocomplete="off" />
+            <input type="password" required autocomplete="off" id="txtContrasennaReg"/>
           </div>
 
-          <button type="submit" class="button button-block">Registrar</button>
+          <button type="submit" class="button button-block" id="btnRegistrar">Registrar</button>
 
-        </form>
+        </div>
 
       </div>
 
       <div id="login">
         <h1>Bienvenido de vuelta!</h1>
 
-        <form action="/" method="post">
+        <div>
 
           <div class="field-wrap">
             <label>
               Correo electrónico<span class="req">*</span>
             </label>
-            <input type="email" required autocomplete="off" />
+            <input id="txtCorreo" type="email" required autocomplete="off" />
           </div>
 
           <div class="field-wrap">
             <label>
               Contraseña<span class="req">*</span>
             </label>
-            <input type="password" required autocomplete="off" />
+            <input id="txtContrasena" type="password" required autocomplete="off" />
           </div>
 
-          <p class="forgot"><a href="#">Olvidó su contraseña?</a></p>
+          <p class="forgot"><a href="../pags/olvido_contrasenna.html">Olvidó su contraseña?</a></p>
           <!--Agregar un pagina para ingresar el correo electronico y que se le envie una contraseña temporal o que se le envie su contraseña guardada en la base de datos-->
 
-          <button class="button button-block" onclick="window.location='./desayunos.html'">Iniciar sesión</button>
+          <button id="btnIniciar" class="button button-block">Iniciar sesión</button>
 
-        </form>
+        </div>
 
       </div>
 
@@ -92,9 +92,12 @@
 
   </div> <!-- /form -->
   <!-- partial -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
   <script src="../js/ctrlInicioRegistro.js"></script>
+  <script src="../js/srvcInicioRegistro.js"></script>
 
 </body>
 

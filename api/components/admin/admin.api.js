@@ -5,6 +5,7 @@ const admin_model=require('./admin.model');
 module.exports.registrar=function(req, res){
     
     let nuevo_admin=new admin_model({
+        tipoUsuario : req.body.tipoUsuario,
         correo : req.body.correo,
         contrasenna : req.body.contrasenna
 
