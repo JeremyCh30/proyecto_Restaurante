@@ -20,7 +20,7 @@ const express = require('express'),
 /**
  * Se le indica que cree un servidor extra dentro del puerto 4000 y escuche los cambios que se le hagan a esos archivos
  */
-let server = app.listen(process.env.PORT || port);
+app.listen(process.env.PORT || port);
 
 /**
  * Se define la conexión con Mongoose, enviándole como parámetro la url de la base de datos
