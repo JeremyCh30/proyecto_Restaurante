@@ -4,7 +4,7 @@ const http = require('http');
 
 const port = 3000; //Se establece el puerto 3000 como punto de origen para acceder a la aplicación, para acceder se usa localhost:3000 en el navegador
 
-const serveStatic = require('serve-static'); //Es la dependencia que permite crear un servido
+const serveStatic = require('serve-static'); //Es la dependencia que permite crear un servidor
 // Se exporta la conexión de nodejs
 const connect = require('connect');
 

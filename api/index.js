@@ -18,17 +18,9 @@ const express = require('express'),
     port = 4000;
 
 /**
- * settings
- */
-app.set('port', process.env.PORT || 3000);
-
-
-/**
  * Se le indica que cree un servidor extra dentro del puerto 4000 y escuche los cambios que se le hagan a esos archivos
  */
-let server = app.listen(app.get('port'), () =>{
-    console.log('Back-end corriendo en el puerto ' + app.get('port'))
-});
+let server = app.listen(process.env.PORT || port);
 
 /**
  * Se define la conexión con Mongoose, enviándole como parámetro la url de la base de datos
@@ -46,10 +38,7 @@ db.on('error', console.error.bind(console, 'Error de conexión: '));
 db.once('open', function () {
   console.log('Base de datos conectada correctamente');
 });
-/**
- * settings
- */
-app.set('port', process.env.PORT || 3000);
+
 /**
  * Le indicamos a express que envíe las respuestas a la carpeta "public"
  */
@@ -81,8 +70,6 @@ const almuerzos = require('./components/almuerzos/almuerzo.route');
 const cenas = require('./components/cenas/cena.route');
 const desayunos = require('./components/desayunos/desayuno.route');
 const postres = require('./components/postres/postre.route');
-const login = require('./components/login/login.route');
-const recuperar = require('./components/recuperar/recuperar.route');
 /**
  * Le indicamos que le de acceso externo a las rutas inicializadas
  */
@@ -94,11 +81,10 @@ app.use('/api', almuerzos);
 app.use('/api', cenas);
 app.use('/api', desayunos);
 app.use('/api', postres);
-app.use('/api', recuperar);
 
 // Se guarda todo lo que se ha realizado
 module.exports = app;
 
-/* function _server(){
+function _server(){
   console.log('Back-end corriendo en el puerto ' + port);
-}; */
+};
