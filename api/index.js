@@ -20,7 +20,7 @@ const express = require('express'),
 /**
  * Se le indica que cree un servidor extra dentro del puerto 4000 y escuche los cambios que se le hagan a esos archivos
  */
-let server = app.listen(process.env.PORT || port);
+let server = app.listen(port,_server());
 
 /**
  * Se define la conexión con Mongoose, enviándole como parámetro la url de la base de datos
@@ -70,6 +70,8 @@ const almuerzos = require('./components/almuerzos/almuerzo.route');
 const cenas = require('./components/cenas/cena.route');
 const desayunos = require('./components/desayunos/desayuno.route');
 const postres = require('./components/postres/postre.route');
+const login = require('./components/login/login.route');
+const recuperar = require('./components/recuperar/recuperar.route');
 /**
  * Le indicamos que le de acceso externo a las rutas inicializadas
  */
@@ -81,6 +83,8 @@ app.use('/api', almuerzos);
 app.use('/api', cenas);
 app.use('/api', desayunos);
 app.use('/api', postres);
+app.use('/api', login);
+app.use('/api', recuperar);
 
 // Se guarda todo lo que se ha realizado
 module.exports = app;
