@@ -15,12 +15,12 @@ const express = require('express'),
  */
     let db = mongoose.connection,
     dburl = 'mongodb+srv://jeremych:jbrionesc30@cluster0.m1smj.mongodb.net/restaurante_fundavida?retryWrites=true&w=majority',
-    port = 4000;
+    port = process.env.PORT || 4000;
 
 /**
  * Se le indica que cree un servidor extra dentro del puerto 4000 y escuche los cambios que se le hagan a esos archivos
  */
-let server = app.listen(port,_server());
+app.listen(port, () => {console.log('Corriendo en el puerto '+ port)});
 
 /**
  * Se define la conexión con Mongoose, enviándole como parámetro la url de la base de datos
