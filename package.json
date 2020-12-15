@@ -2,10 +2,10 @@
   "name": "restaurante_knd",
   "version": "1.0.0",
   "description": "proyecto web restaunte",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon index.js"
   },
   "author": "jeremy",
   "license": "ISC",
