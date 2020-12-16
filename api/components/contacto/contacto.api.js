@@ -2,7 +2,7 @@
 
 const contacto_model=require('./contacto.model');
 const accountSid = 'AC9285ab83c1bb96ab837aca05a4eb6666'; 
-const authToken = '8d24a022178d85695ce902fd05a52b77'; 
+const authToken = '19c115892abdbba39b1bcd88d61e5376'; 
 const client = require('twilio')(accountSid, authToken); 
 
 module.exports.registrar=function(req, res){
@@ -25,7 +25,7 @@ module.exports.registrar=function(req, res){
             client.messages.create({
             body: message, 
             from: 'whatsapp:+14155238886',     
-            to: `whatsapp:+50671874841`
+            to: `whatsapp:+50687944158`
             });
             res.json({success : true, msg: 'Registro éxitoso'});
         };

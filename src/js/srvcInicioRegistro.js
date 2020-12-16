@@ -29,7 +29,7 @@ function validarCredenciales(pcorreo, pcontrasenna) {
 };
 
 /*Registrar*/
-function registrarCliente(ptipoUsuario, pnombre, papellido, pcorreo,pcontrasenna) {
+function registrarCliente(ptipoUsuario, pnombre, papellido, pcorreo, pcontrasenna) {
     let respuesta = '';
     let peticion = $.ajax({
         url: 'http://localhost:4000/api/registrar_cliente',

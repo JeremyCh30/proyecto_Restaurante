@@ -104,7 +104,7 @@ const botonRegistrar = document.querySelector('#btnRegistrar');
 const inputNombreRegistro = document.querySelector('#txtNombreReg');
 const inputApellidosRegistro = document.querySelector('#txtApellidosReg');
 const inputCorreoRegistro = document.querySelector('#txtCorreoReg');
-const inputContrasenaRegistro = document.querySelector('#txtCorreoReg');
+const inputContrasenaRegistro = document.querySelector('#txtContrasennaReg');
 
 function datosRegistro() {
   let tipo_usuario = "1"
@@ -142,7 +142,7 @@ function datosRegistro() {
 
 };
 
-function validarRegistro(pnombre,papellidos, pcorreo, pcontrasena,){
+function validarRegistro(pnombre, papellidos, pcorreo, pcontrasena){
   let error=false;
   let expLetras=/^[a-z A-ZáÁéÉíÍÚúñÑÜüëËÖöÓó]+$/;
   let expCorreo=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.([a-zA-Z]{2,4})+$/;
